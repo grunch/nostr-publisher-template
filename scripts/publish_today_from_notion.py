@@ -170,7 +170,6 @@ def mark_published(page_id: str, page: Dict[str, Any], event_id: str) -> None:
 
 
 def main() -> int:
-    load_env_file(Path.home() / ".hermes" / ".env")
     load_env_file(REPO_DIR / ".env")
 
     now = dt.datetime.now(dt.timezone.utc)
